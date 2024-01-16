@@ -1,0 +1,18 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<h2>Thêm điểm cách ly</h2>
+<form action="/DiemCachLy/InsertDCL" method="post">
+    <label for="madcl">Mã điểm cách ly</label>
+    <input type="text" name="madcl" /><br />
+
+    <label for="tendcl">Tên điểm cách ly</label>
+    <input type="text" name="tendcl" /><br />
+
+    <label for="diachi">Địa chỉ</label>
+    <input type="text" name="diachi" /><br />
+
+    <button name="submit" value="submit">Thêm</button>
+</form>

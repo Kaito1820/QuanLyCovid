@@ -1,0 +1,33 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@model CongNhan
+<form action="/CongNhan/UpdateCN" method="post">
+    <label for="macongnhan">Mã công nhân</label>
+    <input type="text" name="macongnhan" value="@Model.macongnhan" /><br />
+    
+    <label for="tencongnhan">Tên công nhân</label>
+    <input type="text" name="tencongnhan" value="@Model.tencongnhan" /><br />
+    
+    <label for="gioitinh">Giới tính</label>
+    
+    @{
+        if(@Model.gioitinh == true)
+        {
+           <input type="checkbox" name="gioitinh" checked/> <br />
+        }
+        else
+        {
+            <input type="checkbox" name="gioitinh" /> <br />
+        }
+    }  
+    
+    
+    <label for="namsinh">Năm sinh</label>
+    <input type="text" name="macn" value="@Model.namsinh"/><br />
+    
+    <label for="nuocve">Nước về</label>
+    <input type="text" name="nuocve" value="@Model.nuocve"/><br />
+</form>
